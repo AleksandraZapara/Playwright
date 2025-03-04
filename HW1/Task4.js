@@ -1,15 +1,5 @@
-//  Написати умовну конструкцію, яка в залежності від значення набраного балу 
-// по 100-бальній шкалі, виводитиме відповідний результат. 
-// Зробити 2-ма різними способами через 2 різних умовних оператора.
-//Для балів в діапазоні 0-49 – має виводитися оцінка ”Unsatisfied!”
-//Для балів в діапазоні 50-70 – має виводитися оцінка ”Satisfied!”
-//Для балів в діапазоні 71-87 – має виводитися оцінка “Good!”
-//Для балів в діапазоні 88-100 – має виводитися оцінка “Excellent!”
-//Для балів поза діапазоном 0-100 – має виводитися “Incorrect assessment!!”
-
-
 // Method_1
-/*let score = prompt("Enter the score");
+let score = prompt("Enter the score");
 
 if (isNaN(score)) {
     console.log("Please, enter the number");
@@ -23,7 +13,7 @@ if (isNaN(score)) {
     console.log("Excellent!");
 } else {
     console.log("Incorrect assessment!!");
-}*/
+}
 
 // Method_2
 let score1 = Number(prompt("Enter the score"));
