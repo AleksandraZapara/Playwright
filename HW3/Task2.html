@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>   
+        <section>
+            <h2 class="header">Header</h2>
+            <p id ='data'>DOM - document object model </p>
+            <span>Span</span>
+            <div>Invisible element</div>
+        </section>
+        <button id="btn">Add style</button>     
+       <script>
+        function addStyle(){ 
+    document.querySelector("h2").setAttribute("style", "color: red; text-decoration: underline;");
+    document.querySelector("p").setAttribute("style", "color: brown; font-size: 18px; font-family: 'Comic Sans MS';");
+    document.querySelector("span").setAttribute("style", "color: green; font-style: italic;");
+    document.querySelector("div").setAttribute("style", "display: none;");
+}
+
+document.getElementById("btn").onclick = addStyle;
+        
+       </script>
+
+</body>
+</html>

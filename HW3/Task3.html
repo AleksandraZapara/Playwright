@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <button id="btn">Live button</button>  
+    <p id="message" hidden>Message</p>  
+
+   <script>
+      
+    function mouseOver(){ 
+        document.getElementById("message").hidden = false;
+        document.getElementById("message").textContent= "Mouse is on me!";
+}
+
+    function mouseOut(){ 
+        document.getElementById("message").hidden = false;
+        document.getElementById("message").textContent = "Mouse is not on me!";
+}
+
+    function mousePress(){ 
+        document.getElementById("message").hidden = false;
+        document.getElementById("message").textContent = "I was pressed";
+}
+
+btn.addEventListener("mouseover", mouseOver);
+btn.addEventListener("mouseout", mouseOut);
+btn.addEventListener("click", mousePress);
+    
+   </script>
+
+</body>
+</html>

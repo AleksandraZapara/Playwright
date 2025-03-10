@@ -7,7 +7,9 @@ function checkID() {
         throw new Error("Invalid ID. Please enter a number");  
     }else if (idInput < 1 || idInput > 1000) {
         throw new Error("Please enter your ID between 1 and 1000");
-} alert(idInput + ": " + "Your ID has been passed verification");
+} 
+alert(idInput + ": " + "Your ID has been passed verification");
+
 }
 
 try {
