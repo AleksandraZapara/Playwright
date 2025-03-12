@@ -6,13 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    <article class="article postList">  
-        <div id="container">
-            <p>Post 1</p>
-            <p>Post 2</p>
-            <p>Post 3</p>          
-        </div>
-    </article> 
+    
     <script>
         const article = document.createElement ("article");
         article.className = "article postList";
@@ -30,8 +24,9 @@
         postThree.textContent = 'Post 3';
      
         container.append(postOne, postTwo, postThree);
-        article.after(container);
-        document.body.append(article);
+
+        article.append(container);
+        document.body.prepend(article);
     </script>
 </body>
 </html>
