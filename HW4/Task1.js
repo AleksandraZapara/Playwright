@@ -8,3 +8,13 @@ const scores = {
     philosophy: "transferred",
     network: 81
   };
+
+  function newScores(scores){
+    for (const key in scores) {
+        if (typeof scores[key] === "number") {
+          delete scores[key];
+        }
+      }
+
+      console.log(newScores);
+  }
