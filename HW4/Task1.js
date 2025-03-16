@@ -9,12 +9,10 @@ const scores = {
     network: 81
   };
 
-  function newScores(scores){
     for (const key in scores) {
-        if (typeof scores[key] === "number") {
+        if (typeof scores[key] !== "number") {
           delete scores[key];
         }
       }
 
-      console.log(newScores);
-  }
+    console.log(scores);
