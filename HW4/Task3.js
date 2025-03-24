@@ -16,7 +16,7 @@ class Plane {
      }
     }
 
-     class TransportPlane extends Plane {
+    class TransportPlane extends Plane {
         constructor(model, fuelSupply, fuelConsumption, cargo, addTank) {
             super(model, fuelSupply, fuelConsumption);
             this.cargo = cargo; 
@@ -28,6 +28,7 @@ class Plane {
             return (totalFuel / this.fuelConsumption) * 100;
         }
     }
+
     class PassengerPlane extends Plane {
         constructor(model, fuelSupply, fuelConsumption, passengers, refueling) {
             super(model, fuelSupply, fuelConsumption);
